@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es"><!-- permite que se puedan escribir caracteres en español -->
+    <title>Personajes</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="estilos.css" rel="stylesheet" type="text/css"><!-- llama el archivo estilos.css -->
+    <link rel="icon" href="./imagenes/villa-de-leyva-icon.ico.jpg"><!--comando para poner el icono a la pagina -->
+</head>
+<body class="body">
+
+		<nav class="menu-sec" id="myTopnav"><!-- menu de botones -->
+			<a href="index.html" target="_self"><button class="boton-sec">INICIO</button></a>
+            <a href="localizacion.html" target="_self"><button class="boton-sec">LOCALIZACIÓN</button></a><!-- formato para acceder a un vínculo -->
+            <a href="sitios.html" target="_self"><button class="boton-sec">SITIOS TURISTICOS</button></a>
+            <a href="personajes.html" target="_self"><button class="active">PERSONAJES</button></a>
+            <a href="historia.html" target="_self"><button class="boton-sec">HISTORIA</button></a>
+            <a href="creditos.html" target="_self"><button class="boton-sec">CRÉDITOS</button></a>
+			<a href="mapa_interactivo.html" target="_self"><button class="boton-sec">MAPA INTERACTIVO</button></a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+                <i class="fa fa-bars"></i>
+            </a> 
+        </nav>
+
+	<div class="cuerpo1">
+		<h1 class="subtitulo2">Personajes</h1>
+		<div class="horizontalcontainer"><!-- permite distribuir horizontalmente por secciones -->
+			<div class="imgResponsiva">
+				<h2 class="subtitulo1">Francisco José de Caldas</h2>
+				<img class="imagen2" src="imagenes/villa-de-leyva-personaje1.jpg"><!-- formato para introducir imagenes -->
+				<p class="cuerpo3">
+					Francisco José de Caldas (1768-1816): Aunque no nació en Villa de Leyva, Caldas pasó parte de su infancia en esta localidad. 
+					Fue un científico y geógrafo destacado durante la época de la independencia de Colombia. Sus contribuciones a la geografía y
+					la ciencia se reconocen en los libros de historia de Colombia.        
+				</p>
+			</div>
+			<div class="imgResponsiva">
+				<h2 class="subtitulo1">Antonio Ricaurte</h2> <br/> <br/>
+				<img class="imagen2" src="imagenes/villa-de-leyva-personaje2.jpg"><!-- formato para introducir imagenes -->
+				<p class="cuerpo3">
+					Nacido en Villa de Leyva en 1786, Antonio Ricaurte fue un valiente militar que luchó en las guerras de independencia de Colombia
+					y Venezuela. Es conocido por su acto heroico en la Batalla de San Mateo en 1814, donde se inmoló prendiendo fuego a un polvorín 
+					para evitar que cayera en manos de los realistas.
+				</p>
+			</div>
+			<div class="imgResponsiva">
+				<h2 class="subtitulo1">Antonio Nariño</h2> <br/> <br/>
+				<img class="imagen2" src="imagenes/villa-de-leyva-personaje3.jpg"><!-- formato para introducir imagenes -->
+				<p class="cuerpo3">
+					Aunque no nació en Villa de Leyva, Antonio Nariño pasó parte de su vida en este pueblo, donde escribió y publicó algunas de sus obras
+					más importantes, como "El Periódico de Santafé" y "Los Derechos del Hombre". Fue un destacado líder político y defensor de la independencia
+					de Colombia. Finalmente el 13 de diciembre de 1823, Nariño murió enfermo en Villa de Leyva a la de edad de 58 años.
+				</p>
+			</div>
+			<div class="imgResponsiva">
+				<h2 class="subtitulo1">Mi papá </h2> <br/> <br/> 
+				<img height="imagen2" src="imagenes/villa-de-leyva-personaje4.jpg"><!-- formato para introducir imagenes -->
+				<p class="cuerpo3">
+					Nació en Villa de Leyva el 9 de marzo de 1956, le encanta vivir en el campo. Para mi es todo un personaje.
+				</p>
+			</div>
+		</div>
+		<br/> <br/> <br/>
+	</div>
+		<!-- Pie de pagina -->
+	<footer id="main-footer">
+		<p> Paula Andrea Castellanos<br/>
+			Universidad Nacional de Colombia - Gráfica Interactiva <br/>
+			
+			&copy;2023-II
+		</p>
+	</footer>	 
+	<script>/* Función de javascript que se encarga de agregar al class del menù de navegación 
+		la definición responsive del menù para tamaños de pantalla de dispositivos móviles */
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "menu-sec") {
+			x.className += " responsive";
+		  } else {
+			x.className = "menu-sec";
+		  }
+		}
+	</script> 
+</body>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es"><!-- permite que se puedan escribir caracteres en español -->
+    <title>Sitios</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="estilos.css" rel="stylesheet" type="text/css"><!-- llama el archivo estilos.css -->
+    <link rel="icon" href="./imagenes/villa-de-leyva-icon.ico.jpg"><!--comando para poner el icono a la pagina -->
+</head>
+<body class="body">
+	<header>
+        <nav class="menu-sec" id="myTopnav"><!-- menu de botones -->
+			<a href="index.html" target="_self"><button class="boton-sec">INICIO</button></a>
+            <a href="localizacion.html" target="_self"><button class="boton-sec">LOCALIZACIÓN</button></a><!-- formato para acceder a un vínculo -->
+            <a href="sitios.html" target="_self"><button class="active">SITIOS TURISTICOS</button></a>
+            <a href="personajes.html" target="_self"><button class="boton-sec">PERSONAJES</button></a>
+            <a href="historia.html" target="_self"><button class="boton-sec">HISTORIA</button></a>
+            <a href="creditos.html" target="_self"><button class="boton-sec">CRÉDITOS</button></a>
+			<a href="mapa_interactivo.html" target="_self"><button class="boton-sec">MAPA INTERACTIVO</button></a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+                <i class="fa fa-bars"></i>
+            </a> 
+        </nav>
+	</header>	
+	
+	<div class="cuerpo1">
+
+		<h1 class="subtitulo2">Sitios de interés</h1>
+		 <!-- Menú de Contenido de la pagina con vinculos-->
+		<ul>
+			<li><a href=#titulo1 target="_self">1. Iglesia nuestra señora del Rosario</a></li>
+			<li><a href=#titulo2 target="_self">2. Pozos Azules</a></li>
+			<li><a href=#titulo3 target="_self">3. Museo paleontológico</a></li>
+			<li><a href=#titulo3 target="_self">4. Casa terracota</a></li>
+			<li><a href=#titulo3 target="_self">5. Santuario de fauna y flora Iguaque</a></li>
+		</ul>
+		
+		<a name="titulo1" id="titulo1"></a>
+		<h2>Iglesia nuestra señora del Rosario</h2>
+		<div class="container-img">
+			<img class="imagen" src="imagenes/villa-de-leyva-sitio1.jpg"/>
+			<br/>
+			<a name="titulo2" id="titulo1"></a>
+			<h2>Pozos Azules</h2>
+			<img class="imagen" src="imagenes/villa-de-leyva-sitio2.jpg"/>
+			<br/>
+			<a name="titulo3" id="titulo1"></a>
+			<h2>Museo paleontológico</h2>
+			<img class="imagen" src="imagenes/villa-de-leyva-sitio3.jpg"/>
+			<br/>
+			<a name="titulo4" id="titulo1"></a>
+			<h2>Casa terracota</h2>
+			<img class="imagen" src="imagenes/villa-de-leyva-sitio4.jpg"/>
+			<br/>
+			<a name="titulo5" id="titulo1"></a>
+			<h2>Santuario de fauna y flora Iguaque</h2>
+			<img class="imagen" src="imagenes/villa-de-leyva-sitio5.jpg"/>
+			<br/>
+		</div>
+		<p> Para mas información consulte el siguiente
+			<a href="https://www.villadeleyva-boyaca.gov.co/Paginas/Atractivos-Naturales.aspx" target="_blank">LINK</a>
+		</p>
+	</div>
+		<!-- Pie de pagina -->
+	<footer id="main-footer">
+		<p> Paula Andrea Castellanos<br/>
+			Universidad Nacional de Colombia - Gráfica Interactiva <br/>
+			
+			&copy;2023-II
+		</p>
+	</footer>	 
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "menu-sec") {
+			x.className += " responsive";
+		  } else {
+			x.className = "menu-sec";
+		  }
+		}
+	</script> 
+</body>

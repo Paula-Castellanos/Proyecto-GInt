@@ -1,0 +1,506 @@
+@charset "UTF-8"; /* formato de codificación de caracteres*/
+
+@font-face {
+	/* formato para introducir una fuente nueva a utlizar */
+	font-family: Papyrus;
+	src: url('./fuente/letra1.TTF');
+}
+
+@font-face {
+	/* formato para introducir una fuente nueva a utlizar */
+	font-family: cuerpo;
+	src: url('./fuente/letra2.ttf');
+}
+h1 {
+	/* Definición del titulo principal*/ 
+	font-family: Papyrus;
+	font-size: 2.8em;
+	line-height: 1.3em;
+	margin: 5px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+h2 {
+	/* Definición del titulo secundario*/ 
+	font-family: Papyrus;
+	font-size: 2em;
+	line-height: 1.3em;
+	margin: 5px 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+.body {
+	/* estilo del cuerpo del documento de página de inicio */
+	background-image: url(imagenes/villa-compressed.gif);
+	background-size: 70%;
+	align-items: center;
+}
+
+.body-page {
+	/* estilo del cuerpo del documento de las demás páginas */
+	background-image: url(imagenes/villa-de-leyva-fondo.jpg);
+	background-size: 70%;
+	align-items: center;
+}
+
+.menu {
+	/* estilo para centrar menú de página de inicio (index)*/
+	text-align: center;
+}
+
+.boton-inicio {
+	/* estilo de los botones del documento */
+	height: 70px;
+	width: 250px;
+	font-family: Papyrus;
+	text-align: center;
+	align-items: center;
+	background-color: #D9D2E9;
+	text-shadow: 1px 1px #3f3f3f;
+	color: #134F5C;
+	border: none;
+	font-size: large;
+	opacity:0.7;
+}
+.boton-inicio:hover {
+	/* estilo para cuando el mouse toca el botón del menú */
+	background: #ad56d2;
+}
+
+.boton-sec {
+	/* estilo de los botones de las páginas informativas a excepciòn de la de inicio */
+	height: 39px;
+	width: 156px;
+	font-family: Papyrus;
+	text-align: center;
+	align-items: center;
+	background-color: #D9D2E9;
+	text-shadow: 1px 1px #3f3f3f;
+	color: #134F5C;
+	border: none;
+	font-size: 11px;
+	opacity:0.8;
+}
+.boton-sec:hover:not(.active) {
+	/* estilo para relacionar estilo de botòn activo con todo el menú de opciones */
+	background: #ad56d2;
+}
+
+.active {
+	/* estilo para cambio de color en el botòn de menú de la página actualmente puesta */
+	background-color: #04AA6D;
+	height: 50px;
+	width: 200px;
+	font-family: Papyrus;
+	text-align: center;
+	align-items: center;
+	text-shadow: 1px 1px #3f3f3f;
+	color: #134F5C;
+	border: none;
+	font-size: 14px;
+	opacity:0.8;
+}
+
+	
+.menu-sec {
+	/* estilo del menú de las páginas de contenido (todas a excepción de la de inicio) */
+	text-align: center;
+	background-color: #7CA8FF;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	bottom: 10;
+	width: 100%;
+}
+
+.horizontalcontainer {
+	/* estilo que permite dividir por secciones horizontales el documento */
+	padding: 10px;
+	width: 98%;
+	display: flex;
+	justify-content: space-between;
+}
+
+			
+.cuerpo1 {
+	/* estilo del texto cuerpo del documento */
+	padding-top:15vh;
+	background-color: #AED6F1;
+	margin: 20px auto;
+	text-decoration: none;
+	align-items: center;
+	width:90%;
+}
+.cuerpo1 p {
+	padding: 10px; 
+	margin: 10px; 
+	font-family: cuerpo;
+	color: black;
+	text-align: left;
+	font-size: 30px;
+}
+
+.cuerpo1 .foto1 { 
+	padding: 10px; 
+	margin: 10px; 
+	border: 2px solid #D9D2E9; 
+	float: left; 
+	width: 500px; 
+	max-width: 100%;
+    height: auto;
+}
+
+.titulo1 {
+	/* estilo del título del documento */
+	font-family: Papyrus;
+	color: #61FB42;
+	font-size: 150px;
+	text-shadow: 2px 2px #3f3f3f;
+	background-image: none;
+	text-align: center;
+}
+
+.subtitulo1 {
+	/* estilo del subtitulo del documento */
+	font-family: Papyrus;
+	/*background-color: #ffffff;*/
+	color: #fabc29;
+	text-shadow: 2px 2px #3f3f3f;
+	font-size: 40px;
+	text-align: left;
+	margin: 10px;
+	align-items: center;
+	align-content: center;
+}
+
+.subtitulo2 {
+	/* estilo del subtitulo del documento */
+	font-family: Papyrus;
+	background-color: none;
+	color: black;
+	text-shadow: 2px 2px #3f3f3f;
+	font-size: 80px;
+	text-align: left;
+	margin: 10px;
+	align-items: center;
+	align-content: center;
+}
+
+.container-img {
+	margin: 3%
+}
+.imagen {
+	/* estilo de las imagenes del documento */
+	width: 100%;
+	text-align: center;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+}
+
+.imagen2 {
+	/* estilo de las imagenes del documento */
+	text-align: center;
+	width: 250px;
+}
+
+.horizontalcontainer {
+	/* estilo que permite dividir por secciones horizontales el documento */
+    font-size: 0;
+    text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.horizontalcontainer .imgResponsiva {
+	/* estilo que especifica que se divide en 4 secciones las imágenes. cuando la pantalla supera los 1200px en width*/
+    display: inline-block;
+    font-size: inherit;
+	width: 25%; 
+	max-width: 345px;
+}
+
+.imgResponsiva img {
+	/* estilo que define relación de ancho y alto de la imagen*/
+    height: 35%;
+    width: 100%;
+}
+
+.foto2 { 
+	padding: 10px; 
+	margin: 1%; 
+	border: 2px solid #D9D2E9; 
+	float: right; 
+	width: 70%;
+	/*width: 700px; */
+	height:400px
+}
+.foto3 { 
+	padding: 10px; 
+	margin: 10px; 
+	border: 2px solid #D9D2E9; 
+	float: right; 
+	width: 500px; 
+	max-width: 100%;
+    height: auto;
+}
+.div {
+	display: block; 
+	text-align: center;
+}
+
+.menu-sec .icon {
+	/* estilo para ocultar el ìcono cuando no se está en pantalla menores a width de 800 px*/
+	display: none;
+  }
+
+#main-footer {
+	background: #7CA8FF;
+	color: #3f3f3f;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+#main-footer p {
+	margin: 0;
+}
+.mapa {
+/* estilo para el recuadro de la imagen del mapa interactivo y la infomación a desplegar de cada punto marcado*/
+	position:relative; 
+	font-size:20px;
+	color:#000000;
+	background-color:white;
+	box-shadow:2px 2px 5px black;
+	width: 95%;
+	padding: 1%;
+	margin:auto;
+    margin-bottom:15px;
+	display:block;
+}
+
+/*Estilos para cada uno de los puntos geográficos en el mapa interactivo*/
+.punto1 {
+	/* estilos para fijar la ubicación del primer punto de un sitio en el mapa*/
+    position: absolute;
+	z-index:5;
+	width:2.5%;
+	bottom:50%;
+	left:56.5%;
+}
+
+.punto2 {
+	/* estilos para fijar la ubicación del segundo punto de un sitio en el mapa*/
+	position:absolute;
+    z-index:5;
+	width:2.5%;
+	bottom:55.5%;
+	left:70.7%;
+  }
+.punto3 {
+	/* estilos para fijar la ubicación del tercer punto de un sitio en el mapa*/
+    position:absolute;
+	z-index:5;
+	width:2.5%;
+	bottom:78%;
+	left:55%;
+}
+.punto4 {
+	/* estilos para fijar la ubicación del cuarto punto de un sitio en el mapa*/
+	position:absolute;
+	z-index:5;
+	width:2.5%;
+	bottom:60%;
+	left:60%;
+}
+.punto5 {
+	/* estilos para fijar la ubicación del quinto punto de un sitio en el mapa*/
+	position:absolute;
+	z-index:5;
+	width:2.5%;
+	bottom:22%;
+	left:10.6%;
+}
+
+@media only screen and (max-width: 1200px){
+
+	.menu-sec {
+		/* estilo del menú de las páginas de contenido (todas a excepción de la de inicio) */
+		background-color: #00aa17;
+	}
+	
+	.boton-sec {
+		/* estilo de los botones de las páginas informativas a excepciòn de la de inicio */
+		height: 29px;
+		width: 116px;
+		color: #00aa17;
+		font-size: 7.8px;
+	}
+	.boton-sec:hover:not(.active) {
+		/* estilo para relacionar estilo de botòn activo con todo el menú de opciones */
+		background: #ceffc7;
+	}
+	.active {
+		/* estilo para cambio de color en el botòn de menú de la página actualmente puesta */
+		height: 38px;
+		width: 154px;
+		font-size: 9.5px;
+	}
+	.cuerpo1 {
+		/* estilo del texto cuerpo del documento */
+		background-color: #c5fcce;
+	}
+
+	.cuerpo1 p {
+
+		color: #4edd3b;
+	}
+
+	.subtitulo2 {
+		/* estilo del subtitulo del documento */
+		color: #00aa17;
+	}
+
+	.horizontalcontainer {
+		/* estilo que permite dividir por secciones horizontales el documento */
+		justify-content: space-evenly;
+	}
+	
+	.horizontalcontainer .imgResponsiva {
+		/* estilo que especifica que se divide en 2 secciones las imágenes si el tamaño de la pantalla se encuentra entre 800 px y 1200 px en width */
+		width: 50%; 
+	}
+	.titulo1 {
+		/* estilo del título del documento */
+		color: #920892;
+	}
+
+}
+
+@media only screen and (max-width: 800px){
+
+	.cuerpo1 {
+		/* estilo del fondo del cuerpo del documento */
+		background-color: #cb9dff;
+		opacity: 0.99;
+	}
+
+	.cuerpo1 p {
+		/* estilo del texto del cuerpo del documento */
+		color: #a02786;
+	}	
+
+	.subtitulo2 {
+		/* estilo del subtitulo del documento */
+		color: #7a27a0;
+	}
+
+	.horizontalcontainer {
+		/* estilo que permite dividir por secciones horizontales el documento */
+		font-size: 0;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.horizontalcontainer .imgResponsiva {
+		/* estilo que especifica que se divide en 4 secciones las imágenes*/
+		width: 100%; 
+		height: 35%;
+	}
+
+	.titulo1 {
+		/* estilo del título del documento */
+		color: #fd8904;
+	}
+
+	.menu-sec {
+		/* estilo del menú de las páginas de contenido (todas a excepción de la de inicio) */
+		text-align: center;
+		background-color: #b37af5; /* #73fa51 */
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		bottom: 5;
+		width: 100%;
+	}
+
+	.menu-sec a {
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 20px;
+		height: 20px;
+	  }
+	  
+	  .menu-sec a:hover {
+		background-color: #920892;  /*#209e40*/
+		color: white;
+	  }
+	  
+	  .menu-sec a.active {
+		background-color: #920892;
+		color: white;
+	  }
+	  
+	 
+	  .menu-sec a:not(:first-child) {display: none;}
+	  .menu-sec a.icon {
+		float: right;
+		display: block;
+	  }
+	  .menu-sec.responsive {position: relative;}
+	  .menu-sec.responsive .icon {
+		/*Estilo que define la posición absoluta del ícono en el menú responsive */
+		position: absolute;
+		right: 0;
+		top: 0;
+	  }
+	  .menu-sec.responsive a {
+		/*Estilo que define la posición de las opciones que se despliegan del ícono del menú responsive */
+		float: none;
+		display: block;
+		text-align: left;
+	  }
+
+	  .boton-sec {
+		/* estilo de los botones de las páginas informativas a excepciòn de la de inicio */
+		height: 30px;
+		width: 120px;
+		font-family: Papyrus;
+		text-align: center;
+		align-items: center;
+		background-color: #920892;
+		text-shadow: 1px 1px white;
+		color: #888888;
+		border: none;
+		font-size: 10px;
+		opacity:0.8;
+	}
+	.active {
+		/* estilo para cambio de color en el botòn de menú de la página actualmente puesta */
+		background-color: #04AA6D;
+		height: 35px;
+		width: 140px;
+		font-family: Papyrus;
+		text-align: center;
+		align-items: center;
+		text-shadow: 1px 1px #3f3f3f;
+		color: #134F5C;
+		border: none;
+		font-size: 12px;
+		opacity:0.8;
+	}
+
+	#main-footer {
+		background: #b37af5;
+	}
+}
+
+	

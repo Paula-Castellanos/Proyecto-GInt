@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es"><!-- permite que se puedan escribir caracteres en español -->
+    <title>Villa de Leyva</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="estilos.css" rel="stylesheet" type="text/css"><!-- llama el archivo estilos.css -->
+    <link rel="icon" href="./imagenes/villa-de-leyva-icon.ico.jpg"><!--comando para poner el icono a la pagina -->
+</head>
+
+<body class="body">
+
+	<header>
+		<nav class="menu-sec" id="myTopnav"><!-- menu de botones -->
+			<a href="index.html" target="_self"><button class="boton-sec">INICIO</button></a>
+			<a href="localizacion.html" target="_self"><button class="active">LOCALIZACIÓN</button></a><!-- formato para acceder a un vínculo -->
+			<a href="sitios.html" target="_self"><button class="boton-sec">SITIOS TURISTICOS</button></a>
+			<a href="personajes.html" target="_self"><button class="boton-sec">PERSONAJES</button></a>
+			<a href="historia.html" target="_self"><button class="boton-sec">HISTORIA</button></a>
+			<a href="creditos.html" target="_self"><button class="boton-sec">CRÉDITOS</button></a>
+			<a href="mapa_interactivo.html" target="_self"><button class="boton-sec">MAPA INTERACTIVO</button></a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+                <i class="fa fa-bars"></i>
+            </a> 
+		</nav>
+	</header>
+	
+	<div class="cuerpo1">
+		<h1 class="subtitulo2">Villa de Leyva – ¿Cómo llegar?</h1>
+		<img class="foto2" src="imagenes/maps-villa-de-leyva.png"><!-- formato para introducir imagenes -->
+		<p>
+			Para llegar a Villa de Leyva desde Bogotá en vehículo particular existen varias opciones:
+		</p>
+		<p>
+			<strong>Bogotá – Tunja – Villa de Leyva.</strong> Se sale de Bogotá por la Autopista Norte y se toma la carretera rumbo a Tunja. En esta ciudad
+			se toma la vía que comunica con Chiquinquirá y antes de Sáchica se desvía para Villa de Leyva (Tiempo estimado de viaje 3:00 horas)
+			. Con la doble calzada se va muy bien hasta Tunja. En Tunja pueden visitar la Casa del Fundador, la Plaza de Bolívar y hacer un 
+			recorrido por las Iglesias.
+		</p>
+		<p>
+			<strong>Variante: Bogotá – Samacá – Villa de Leyva.</strong> Igual se sale por la Autopista Norte pero antes de llegar a Tunja, a la altura del Puente de Boyacá,
+			se toma el desvío para Samacá y de allí se sale a la carretera que comunica a Tunja con Villa de Leyva. Se ahorra la entrada a Tunja
+			(unos 20 minutos), pero el tramo del Puente de Boyacá a Samacá no siempre está en las mejores condiciones.
+		</p>
+		<p>
+			<strong>Bogotá – Chiquinquirá – Villa de Leyva:</strong> Pueden hacer paradas en la Catedral de Sal de Zipaquirá, en Ubaté, en la mágica Laguna de Fúquene, el 
+			lienzo renovado de Nuestra Señora de Chiquinquirá, Ráquira, Sutamarchán y por último Villa de Leyva. Es la ruta ideal para regresar a Bogotá
+			yéndose de pueblo en pueblo y el paisaje es muy bonito.
+		</p>
+		<p>
+			A Villa de Leyva en transporte público:
+		</p>
+		<p>
+		Si va en bus, puede irse hasta el terminal de buses del Salitre o hasta el Terminal del Norte (Transmilenio lo deja cerca, en el Portal del Norte) y
+		tomar un bus hasta Tunja en un recorrido de dos horas y media desde la salida de Bogotá (Valor desde $25.000). De Tunja a Villa de Leyva salen
+		busetas intermunicipales cada 10 minutos, hasta las 8:00 pm,  y son sólo 40 minutos de viaje (valor $8.500 aproximadamente). 
+		También puede tomar los buses directos que ofrecen las empresas Flota Los Libertadores, Flota Valle de Tenza y Expreso Gaviota desde Bogotá, 
+		que salen desde las 5:30 am hasta las 2:30 pm (desde $35.000).
+		</p>
+	</div>
+		<!-- Pie de pagina -->
+	<footer id="main-footer">
+		<p> Paula Andrea Castellanos<br/>
+			Universidad Nacional de Colombia - Gráfica Interactiva <br/>
+			
+			&copy;2023-II
+		</p>
+	</footer>	 
+
+	<script> /* Función de javascript que se encarga de agregar al class del menù de navegación 
+	la definición responsive del menù para tamaños de pantalla de dispositivos móviles */
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "menu-sec") {
+			x.className += " responsive";
+		  } else {
+			x.className = "menu-sec";
+		  }
+		}
+	</script> 
+</body>

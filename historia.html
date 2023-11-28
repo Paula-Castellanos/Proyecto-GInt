@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es"><!-- permite que se puedan escribir caracteres en español -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- responsive -->
+    <title>Historia</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="estilos.css" rel="stylesheet" type="text/css"><!-- llama el archivo estilos.css -->
+    <link rel="icon" href="./imagenes/villa-de-leyva-icon.ico.jpg"><!--comando para poner el icono a la pagina -->
+</head>
+<body class="body">
+
+		<nav class="menu-sec" id="myTopnav"><!-- menu de botones -->
+			<a href="index.html" target="_self"><button class="boton-sec">INICIO</button></a>
+            <a href="localizacion.html" target="_self"><button class="boton-sec">LOCALIZACIÓN</button></a><!-- formato para acceder a un vínculo -->
+            <a href="sitios.html" target="_self"><button class="boton-sec">SITIOS TURISTICOS</button></a>
+            <a href="personajes.html" target="_self"><button class="boton-sec">PERSONAJES</button></a>
+            <a href="historia.html" target="_self"><button class="active">HISTORIA</button></a>
+            <a href="creditos.html" target="_self"><button class="boton-sec">CRÉDITOS</button></a>
+			<a href="mapa_interactivo.html" target="_self"><button class="boton-sec">MAPA INTERACTIVO</button></a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+                <i class="fa fa-bars"></i>
+            </a> 
+        </nav>
+
+	
+	<div class="cuerpo1">
+		<h1 class="subtitulo2">Historia</h1>
+        <p>
+            La historia de Villa de Leyva, un encantador pueblo colombiano ubicado en el 
+			departamento de Boyacá, es rica y llena de acontecimientos que se remontan a 
+			la época precolombina. Aquí te proporciono un resumen de la historia de Villa de Leyva:
+        </p>
+		<div>
+		<p>
+			<img class="foto3" src="imagenes/fosil.jpg">
+            <strong>1. Época Precolombina:</strong> Antes de la llegada de los españoles, la región que hoy es Villa de Leyva
+			estaba habitada por varios grupos indígenas, incluidos los Muisca. Estos indígenas tenían 
+			una avanzada cultura agrícola y comercial y dejaron vestigios arqueológicos en la zona.
+        </p>
+		</div>
+		<p>
+            <strong>2. Fundación Española:</strong> Villa de Leyva fue fundada el 12 de junio de 1572 por el capitán Hernán 
+			Suárez de Villalobos, bajo el nombre de "Villa de Santa María de Leyva". Fue establecida como
+			un punto estratégico en la red de comunicación entre Bogotá y el norte de Colombia.
+        </p>
+		<p>
+            <strong>3. Época Colonial:</strong> Durante la época colonial, Villa de Leyva prosperó como un centro agrícola
+			y ganadero. Muchas de las construcciones coloniales que caracterizan la ciudad, como la Plaza
+			Mayor y la iglesia parroquial, fueron construidas en esta época.
+        </p>
+		<p>
+			<img class="foto1" src="imagenes/villa-de-leyva-byn.jpg">
+            <strong>4. Independencia:</strong> Durante las guerras de independencia de Colombia a principios del siglo XIX,
+			Villa de Leyva fue testigo de enfrentamientos entre las fuerzas realistas y patriotas. Antonio
+			Ricaurte, un héroe de la independencia, nació en esta ciudad.
+        </p>
+		<p>
+            <strong>5. Siglo XIX y XX:</strong> Villa de Leyva continuó siendo un pueblo tranquilo y agrícola durante el siglo XIX
+			y gran parte del siglo XX. Sus calles adoquinadas y su arquitectura colonial se mantuvieron bien
+			conservadas.
+        </p>
+		<p>
+			<strong>6. Turismo:</strong> En la segunda mitad del siglo XX, Villa de Leyva comenzó a atraer la atención de turistas y visitantes 
+			debido a su belleza histórica y natural. Se convirtió en un destino turístico popular en Colombia, y su casco 
+			histórico fue declarado Monumento Nacional en 1954.
+        </p>
+		<p>
+			<strong>7. Eventos y Festivales:</strong> Villa de Leyva es conocida por sus festivales culturales, como el Festival Internacional de la Cultura,
+			el Festival de Luces y Velas, y el Festival del Viento y las Cometas, que atraen a visitantes de todo el país y el mundo.
+        </p>
+		<p>
+			<strong>8. Hoy en Día:</strong> Villa de Leyva es un destino turístico icónico en Colombia, famoso por su arquitectura colonial bien conservada, sus
+			calles empedradas y sus alrededores naturales, que incluyen el Parque Nacional Natural de Iguaque. La ciudad sigue siendo un
+			lugar encantador que conserva su encanto histórico y cultural.
+        </p>
+	</div>
+	<!-- Pie de pagina -->
+	<footer id="main-footer">
+		<p> Paula Andrea Castellanos<br/>
+			Universidad Nacional de Colombia - Gráfica Interactiva <br/>
+			
+			&copy;2023-II
+		</p>
+	</footer> 	
+	<script> /* Función de javascript que se encarga de agregar al class del menù de navegación 
+		la definición responsive del menù para tamaños de pantalla de dispositivos móviles */
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "menu-sec") {
+			x.className += " responsive";
+		  } else {
+			x.className = "menu-sec";
+		  }
+		}
+	</script> 
+</body>
